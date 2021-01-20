@@ -1696,8 +1696,8 @@ details > summary::-webkit-details-marker {
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
   color: #e0dfdc;
-  background-color: #333;
+  background-color: rgb(31, 30, 30);
   letter-spacing: .1em;
-  text-shadow: 2px 2px #131212;
+  text-shadow: 3px 3px #131212;
 }
 
