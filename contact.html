@@ -69,7 +69,7 @@
       <div class="container">
         <br>
         <div class="d-flex justify-content-between align-items-center">
-          <h2>We would love to hear from you!</h2>
+          <h2 style="font-weight:400; font-style: italic;">We would love to hear from you!</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
             <li>Contact</li>
@@ -85,7 +85,9 @@
       <div class="container" style="background-color: white;">
 
         <div class="row justify-content-center" data-aos="fade-up">
-
+          <div class="section-title">
+            <h2>REQUEST A BOOKING</strong></h2>
+          </div>
           <div class="col-lg-10">
 
             <div class="info-wrap">
@@ -119,7 +121,17 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="name" placeholder="First Name" data-rule="minlen:2" data-msg="Please enter at least 2 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Last Name" data-rule="minlen:2" data-msg="Please enter at least 2 chars" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="tel" name="telephone" class="form-control" id="telephone" placeholder="Telephone Number" data-rule="minlen:10" data-msg="Please enter a valid tel number" />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
@@ -128,9 +140,75 @@
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input type="text" class="form-control" name="address" id="address" placeholder="Address" data-rule="minlen:4" data-msg="Please enter a valid address" />
                 <div class="validate"></div>
               </div>
+              <div class="row">
+              <!-- Type of vehicle -->              
+              <div class="col-6">
+                <select class="custom-select form-group mt-3 form-control">
+                  <option selected>Select type of vehicle</option>
+                  <option value="Sedan">Sedan</option>
+                  <option value="Minivan">Minivan</option>
+                  <option value="Pickup truck">Pickup truck</option>
+                  <option value="Motorcycle">Motorcycle</option>
+                  <option value="Coupe">Coupe</option>
+                  <option value="Small SUV">Small SUV</option>
+                  <option value="Large SUV">Large SUV</option>
+                  <option value="RV">RV</option>
+                  <option value="Boat">Boat</option>
+                  <option value="Commercial truck">Commercial truck</option>
+                  <option value="Police vehicle">Police vehicle</option>
+                  <option value="Convertible">Convertible</option>
+                  <option value="Sports and luxury vehicle">Sports and luxury vehicle</option>
+                </select>
+              </div>           
+              <!-- End of type of vehicle -->              
+              <!-- Appointment time -->
+              <div class="col-6">
+                <select class="custom-select form-group mt-3 form-control">
+                  <option selected>Select appointment time</option>
+                  <option value="7:30am">7:30am</option>
+                  <option value="8:30am">8:30am</option>
+                  <option value="9:30am">9:30am</option>
+                  <option value="10:30am">10:30am</option>
+                  <option value="11:30am">11:30am</option>
+                  <option value="12:30pm">12:30pm</option>
+                  <option value="1:30pm">1:30pm</option>
+                  <option value="2:30pm">2:30pm</option>
+                  <option value="3:30pm">3:30pm</option>
+                  <option value="4:30pm">4:30pm</option>
+                  <option value="5:30pm">5:30pm</option>
+                </select>
+              </div> 
+              <!-- End of appointment time -->
+              </div>
+              <div class="row">
+                <!-- Service selection-->              
+                <div class="col-6">
+                  <select class="custom-select form-group mt-3 form-control">
+                    <option selected>Select service</option>
+                    <option value="Easy Wash">Easy Wash</option>
+                    <option value="Easy Clense">Easy Clense</option>
+                    <option value="Easy Splash">Easy Splash</option>
+                  </select>
+                </div>           
+                <!-- End of service selection-->              
+                <!-- Select add-on -->
+                <div class="col-6">
+                  <select class="custom-select form-group mt-3 form-control">
+                    <option selected>Select add-on</option>
+                    <option value="Ceramic coating">Ceramic coating</option>
+                    <option value="Clay bar treatment">Clay bar treatment</option>
+                    <option value="Steam clean interior">Steam clean interior</option>
+                    <option value="Scratch & swirl remover">Scratch & swirl remover</option>
+                    <option value="Leather conditioning">Leather conditioning</option>
+                    <option value="Engine detail">Engine detail</option>
+                    <option value="Interior detail">Interior detail</option>                  
+                  </select>
+                </div> 
+                <!-- End of add on -->
+                </div>
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validate"></div>
@@ -151,29 +229,28 @@
 
   </main><!-- End #main -->
 
- <!-- ======= Footer ======= -->
- <footer id="footer">
+<!-- ======= Footer ======= -->
+<footer id="footer">
 
   <div class="footer-top">
     <div class="container">
       <div class="row">
 
         <div class="col-lg-6 col-md-6 footer-contact">
-          <div class="col-lg-6 col-md-6 footer-contact">
-            <h3 style="color: black;">Easy Splash Auto Detailer LLC</h3>
-            <p style="color: black;">
-              West Palm Beach, FL
-              <br>
-              United States 
-              <br>
-              <strong>Phone:</strong><a href="tel:305-343-1220"> (304) 343.1220</a>
-              <br>
-              <strong>Email:</strong><a href="mailto:contact@easysplashauto.com"> contact@easysplashauto.com</a>
-              <br>
-              <br>
-              <a href="https://www.instagram.com/eazy_splash_autodetailer/" target="_blank" class="instagram"><i class="icofont-instagram icofont-3x"></i></a>    
-            </p>
-          </div>
+          <h3 style="color: black;">Easy Splash Auto Detailer LLC</h3>
+          <p style="color: black;">
+            West Palm Beach, FL
+            <br>
+            United States 
+            <br>
+            <strong>Phone:</strong><a href="tel:305-343-1220"> (304) 343.1220</a>
+            <br>
+            <strong>Email:</strong><a href="mailto:contact@easysplashauto.com"> contact@easysplashauto.com</a>
+            <br>
+            <br>
+            <a href="https://www.instagram.com/eazy_splash_autodetailer/" target="_blank" class="instagram"><i class="icofont-instagram icofont-3x"></i></a>    
+          </p>
+        </div>
 
         <div class="col-lg-6 col-md-6 footer-newsletter">
           <h3 style="color: black;">SUBSCRIBE TO OUR LIST</h3>
