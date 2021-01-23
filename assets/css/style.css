@@ -1685,12 +1685,6 @@ details > summary::-webkit-details-marker {
 }
 /* End FAQ Section */
 
-/* .specials{
-  -webkit-box-shadow: 0 10px 6px -6px #777;
-     -moz-box-shadow: 0 10px 6px -6px #777;
-          box-shadow: 0 10px 6px -6px #777;
-} */
-
 .specials {
   box-shadow:
   0 2.8px 2.2px rgba(0, 0, 0, 0.034),

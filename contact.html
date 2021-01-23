@@ -121,11 +121,11 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="First Name" data-rule="minlen:2" data-msg="Please enter at least 2 chars" />
+                  <input type="text" name="firstname" class="form-control" id="firstname" placeholder="First Name" data-rule="minlen:2" data-msg="Please enter at least 2 chars" />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="text" class="form-control" name="name" id="name" placeholder="Last Name" data-rule="minlen:2" data-msg="Please enter at least 2 chars" />
+                  <input type="text" class="form-control" name="lastnamename" id="lastname" placeholder="Last Name" data-rule="minlen:2" data-msg="Please enter at least 2 chars" />
                   <div class="validate"></div>
                 </div>
               </div>
@@ -147,7 +147,7 @@
               <!-- Type of vehicle -->              
               <div class="col-6">
                 <select class="custom-select form-group mt-3 form-control">
-                  <option selected>Select type of vehicle</option>
+                  <option selected name="type" id="type">Select type of vehicle</option>
                   <option value="Sedan">Sedan</option>
                   <option value="Minivan">Minivan</option>
                   <option value="Pickup truck">Pickup truck</option>
@@ -167,7 +167,7 @@
               <!-- Appointment time -->
               <div class="col-6">
                 <select class="custom-select form-group mt-3 form-control">
-                  <option selected>Select appointment time</option>
+                  <option selected name="time" id="time">Select appointment time</option>
                   <option value="7:30am">7:30am</option>
                   <option value="8:30am">8:30am</option>
                   <option value="9:30am">9:30am</option>
@@ -187,7 +187,7 @@
                 <!-- Service selection-->              
                 <div class="col-6">
                   <select class="custom-select form-group mt-3 form-control">
-                    <option selected>Select service</option>
+                    <option selected name="servicetype" id="servicetype">Select service</option>
                     <option value="Eazy Wash">Eazy Wash</option>
                     <option value="Eazy Clense">Eazy Clense</option>
                     <option value="Eazy Splash">Eazy Splash</option>
@@ -197,7 +197,7 @@
                 <!-- Select add-on -->
                 <div class="col-6">
                   <select class="custom-select form-group mt-3 form-control">
-                    <option selected>Select add-on</option>
+                    <option selected name="addon" id="addon">Select add-on</option>
                     <option value="Ceramic coating">Ceramic coating</option>
                     <option value="Clay bar treatment">Clay bar treatment</option>
                     <option value="Steam clean interior">Steam clean interior</option>
