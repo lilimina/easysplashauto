@@ -126,7 +126,7 @@
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="text" class="form-control" name="lastnamename" id="lastname" placeholder="Last Name" data-rule="minlen:2" data-msg="Please enter at least 2 chars" />
+                  <input type="text" name="lastname" class="form-control"  id="lastname" placeholder="Last Name" data-rule="minlen:2" data-msg="Please enter at least 2 chars" />
                   <div class="validate"></div>
                 </div>
               </div>
@@ -146,9 +146,9 @@
               </div>
               <div class="row">
               <!-- Type of vehicle -->              
-              <div class="col-6">
-                <select class="custom-select form-group mt-3 form-control">
-                  <option selected name="type" id="type">Select type of vehicle</option>
+              <div class="form-group col-6">
+                <select name="type" class="custom-select mt-3 form-control">
+                  <option value="">Select type of vehicle</option>
                   <option value="Sedan">Sedan</option>
                   <option value="Minivan">Minivan</option>
                   <option value="Pickup truck">Pickup truck</option>
@@ -166,9 +166,9 @@
               </div>           
               <!-- End of type of vehicle -->              
               <!-- Appointment time -->
-              <div class="col-6">
-                <select class="custom-select form-group mt-3 form-control">
-                  <option selected name="time" id="time">Select appointment time</option>
+              <div class="form-group col-6">
+                <select name="time" class="custom-select mt-3 form-control">
+                  <option value="">Select appointment time</option>
                   <option value="7:30am">7:30am</option>
                   <option value="8:30am">8:30am</option>
                   <option value="9:30am">9:30am</option>
@@ -186,9 +186,9 @@
               </div>
               <div class="row">
                 <!-- Service selection-->              
-                <div class="col-6">
-                  <select class="custom-select form-group mt-3 form-control">
-                    <option selected name="servicetype" id="servicetype">Select service</option>
+                <div class="form-group col-6">
+                  <select name="servicetype" class="custom-select mt-3 form-control">
+                    <option value="">Select service</option>
                     <option value="Eazy Wash">Eazy Wash</option>
                     <option value="Eazy Cleanse">Eazy Cleanse</option>
                     <option value="Eazy Splash">Eazy Splash</option>
@@ -196,9 +196,9 @@
                 </div>           
                 <!-- End of service selection-->              
                 <!-- Select add-on -->
-                <div class="col-6">
-                  <select class="custom-select form-group mt-3 form-control">
-                    <option selected name="addon" id="addon">Select add-on</option>
+                <div class="form-group col-6">
+                  <select name="addon" class="custom-select mt-3 form-control">
+                    <option value="">Select add-on</option>
                     <option value="Ceramic coating">Ceramic coating</option>
                     <option value="Clay bar treatment">Clay bar treatment</option>
                     <option value="Steam clean interior">Steam clean interior</option>
