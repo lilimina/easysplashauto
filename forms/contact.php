@@ -33,6 +33,7 @@
   $contact->add_message( $_POST['email'], 'Email');  
   $contact->add_message( $_POST['address'], 'Address');
   $contact->add_message( $selectOption = $_POST['type'], 'Type of vehicle');
+  $contact->add_message( $_POST['date'], 'Requested date');
   $contact->add_message( $selectOption = $_POST['time'], 'Requested time');
   $contact->add_message( $selectOption = $_POST['servicetype'], 'Service package');
   $contact->add_message( $selectOption = $_POST['addon'], 'Add on');

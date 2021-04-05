@@ -153,7 +153,7 @@
               </div>
               <div class="row">
               <!-- Type of vehicle -->              
-              <div class="form-group col-6">
+              <div class="form-group col-12">
                 <select name="type" class="custom-select mt-3 form-control">
                   <option value="">Select type of vehicle</option>
                   <option value="Sedan">Sedan</option>
@@ -171,7 +171,13 @@
                   <option value="Sports and luxury vehicle">Sports and luxury vehicle</option>
                 </select>
               </div>           
-              <!-- End of type of vehicle -->              
+              <!-- End of type of vehicle -->   
+              <div class="form-group col-6">
+                <div class="form-group mt-3">
+                  <input type="date" class="form-control" name="date" id="date" placeholder="Date" min="2021-01-01" max="2030-12-31">   
+                  <div class="validate"></div>
+                </div>  
+              </div>     
               <!-- Appointment time -->
               <div class="form-group col-6">
                 <select name="time" class="custom-select mt-3 form-control">
@@ -226,8 +232,8 @@
                 <div class="error-message"></div>
                 <div class="sent-message">
                   Your message has been sent.<br>
-                  We respond to all inquiries in the order they are received.<br>
-                  Please allow between 24-48 hours for a reply. Rest assured, <br>
+                  We respond to all inquiries in the order they are received.
+                  Please allow between 24-48 hours for a reply. Rest assured,
                   someone will get back to you as soon as possible.</div>
               </div>
               <div class="text-center"><button type="submit">SEND</button></div>
